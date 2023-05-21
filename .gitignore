@@ -1,0 +1,18 @@
+/**
+
+
+####This acts as a whitelist
+#
+#To whitelist a file:
+#!.gitignore
+#
+#To whitelist everything in a directory
+#!nvim/
+
+# track this file
+!.gitignore
+
+
+!nvim/
+!nvim/**
+
