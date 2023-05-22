@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Graphics mode
+GenericName=Graphics
+Comment=Switch graphics mode
+Exec=/home/marinus/.config/rofi/scripts/graphics_mode_menu.sh
+Icon=/home/marinus/.config/rofi/icons/gpu_ico_white.png
+Terminal=false
+Type=Application
+Categories=System
+Keywords= graphics mode, integrated, hybrid, dedicated, card
+

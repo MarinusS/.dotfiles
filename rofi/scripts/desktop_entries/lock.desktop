@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Lock
+GenericName=Power menu
+Comment=Sleep/Shutdown/Reboot
+Exec=/home/marinus/.config/rofi/scripts/power_menu.sh -s lock
+Icon=/home/marinus/.config/rofi/icons/power_ico.png
+Terminal=false
+Type=Application
+Categories=System
+Keywords=lock
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Shutdown
+GenericName=Power menu
+Comment=Sleep/Shutdown/Reboot
+Exec=/home/marinus/.config/rofi/scripts/power_menu.sh -s shutdown
+Icon=/home/marinus/.config/rofi/icons/power_ico.png
+Terminal=false
+Type=Application
+Categories=System
+Keywords=shutdown, off, power
