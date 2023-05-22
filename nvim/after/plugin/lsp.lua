@@ -2,6 +2,9 @@ local lsp = require('lsp-zero').preset({})
 local wk = require("which-key")
 
 lsp.on_attach(function(client, bufnr)
+    lsp.buffer_autoformat()
+
+    --Keybindings in normal mode
 	local opts = {
 		mode = "n", -- NORMAL mode
 		-- prefix: use "<leader>f" for example for mapping everything related to finding files
@@ -13,7 +16,6 @@ lsp.on_attach(function(client, bufnr)
 		nowait = false, -- use `nowait` when creating keymaps
 		expr = false, -- use `expr` when creating keymaps
 	}
-
 	wk.register({
 		['K']    = { '<cmd>lua vim.lsp.buf.hover()<cr>', "LSP hover" },
 		['gd']   = { '<cmd>lua vim.lsp.buf.definition()<cr>', "Definition" },
@@ -30,20 +32,6 @@ lsp.on_attach(function(client, bufnr)
 		[']d']   = { '<cmd>lua vim.diagnostic.goto_next()<cr>', "Diagnostic go ti next" },
 	}, opts)
 
-	opts = {
-		mode = "x", -- VISUAL mode
-		-- prefix: use "<leader>f" for example for mapping everything related to finding files
-		-- the prefix is prepended to every mapping part of `mappings`
-		prefix = "",
-		buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
-		silent = true, -- use `silent` when creating keymaps
-		noremap = true, -- use `noremap` when creating keymaps
-		nowait = false, -- use `nowait` when creating keymaps
-		expr = false, -- use `expr` when creating keymaps
-	}
-	wk.register({
-		['<F3>'] = { '<cmd>lua vim.lsp.buf.format({async = true})<cr>', "LSP format" },
-	}, opts)
 end)
 
 -- (Optional) Configure lua language server for neovim

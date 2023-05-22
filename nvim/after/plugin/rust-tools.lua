@@ -21,5 +21,14 @@ rt.setup({
 				['<leader>a'] = { rt.code_action_group.code_action_group, "LSP code action" },
 			}, opts)
 		end,
+
+        settings = {
+            ["rust-analyzer"] = {
+                -- enable clippy on save
+                checkOnSave = {
+                    command = "clippy"
+                },
+            }
+        }
 	},
 })
