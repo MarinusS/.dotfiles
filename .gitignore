@@ -21,3 +21,5 @@
 !polybar/**
 !rofi/
 !rofi/**
+!tmux/
+!tmux/**
