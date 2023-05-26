@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+#From ThePrimeagen: https://github.com/ThePrimeagen/.dotfiles/blob/master/tmux/.tmux.conf
+
+
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
