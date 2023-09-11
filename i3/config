@@ -244,7 +244,7 @@ exec redshift
 
 exec --no-startup-id i3-battery-popup -n -L 20
 # Inner gaps for all windows: space between two adjacent windows (or split containers).
-gaps inner 4px
+gaps inner 0px
 # Outer gaps for all windows: space along the screen edges.
 gaps outer 1px
 smart_gaps on
